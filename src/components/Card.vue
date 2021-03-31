@@ -12,6 +12,8 @@
 
 <script>
 const UserCircle = require("./UserCircle");
+// 寫require沒用
+import UserCircle from "./UserCircle";
 
 export default {
   // module.exports = 改成 export default
