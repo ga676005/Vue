@@ -11,7 +11,7 @@
 </template>
 
 <script>
-const UserCircle = require("./UserCircle");
+import UserCircle from "./UserCircle";
 
 export default {
   // module.exports = 改成 export default
