@@ -15,6 +15,7 @@
 import InputField from "./InputField";
 
 export default {
+  name: "MyForm",
   components: {
     InputField,
   },

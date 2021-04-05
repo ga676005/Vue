@@ -41,6 +41,7 @@
 </template>
 <script>
 export default {
+  name: "Navigation",
   data: function () {
     return {
       nav: [

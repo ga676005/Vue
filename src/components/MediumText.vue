@@ -5,6 +5,11 @@
     us today to get started.
   </p>
 </template>
+<script>
+export default {
+  name: "MediumText",
+};
+</script>
 <style scoped>
 .medium-text {
   margin-top: 10px;

@@ -6,6 +6,7 @@
 </template>
 <script>
 export default {
+  name: "InputField",
   props: {
     label: String,
     id: String,

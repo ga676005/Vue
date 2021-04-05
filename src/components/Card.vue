@@ -11,8 +11,6 @@
 </template>
 
 <script>
-const UserCircle = require("./UserCircle");
-// 寫require沒用
 import UserCircle from "./UserCircle";
 
 export default {
