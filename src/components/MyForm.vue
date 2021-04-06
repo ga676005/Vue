@@ -1,11 +1,7 @@
 <template>
   <form method="post" action="#">
-    <InputField
-      v-for="input in inputs"
-      :label="input.label"
-      :id="input.id"
-      :key="input.id"
-    />
+    <InputField v-for="input in inputs" v-bind="input" :key="input.id" />
+    <!-- v-bind="input" 傳整個object下去，在InputField component裡可直接destructure，在prop裡抓object的properties -->
     <div class="input-wrapper">
       <button>Contact Us</button>
     </div>
