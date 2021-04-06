@@ -27,19 +27,19 @@ export default {
           id: 120,
           name: "Colorful Cups",
           price: 999,
-          img: "assets/cups1.jpg",
+          image: "cups1",
         },
         {
           id: 121,
           name: "Coffee & Home",
           price: 1499,
-          img: "assets/cups2.jpg",
+          image: "cups2",
         },
         {
           id: 122,
           name: "Old Red Friend",
           price: 1999,
-          img: "assets/cups3.jpg",
+          image: "cups3",
         },
       ],
     };

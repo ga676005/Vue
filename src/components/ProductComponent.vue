@@ -1,7 +1,7 @@
 <template>
   <div class="product-wrapper">
     <div class="product-image">
-      <img :src="product.img" />
+      <img :src="require(`../assets/${product.image}.jpg`)" />
     </div>
     <div class="product-name">{{ product.name }}</div>
     <div class="product-price">{{ priceFormatted }}</div>
