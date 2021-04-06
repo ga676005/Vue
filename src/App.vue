@@ -1,33 +1,19 @@
 <template>
   <div id="app">
-    <Navigation />
-
-    <div class="hero-box">
-      <div class="hero-box-left">
-        <LargeText />
-        <MediumText />
-      </div>
-
-      <div class="hero-box-right">
-        <MyForm />
-      </div>
-    </div>
+    <ComponentA />
+    <ComponentB />
   </div>
 </template>
 
 <script>
-import MyForm from "./components/MyForm.vue";
-import Navigation from "./components/Navigation.vue";
-import LargeText from "./components/LargeText.vue";
-import MediumText from "./components/MediumText.vue";
+import ComponentA from "./components/ComponentA.vue";
+import ComponentB from "./components/ComponentB.vue";
 
 export default {
   name: "App",
   components: {
-    MyForm,
-    Navigation,
-    LargeText,
-    MediumText,
+    ComponentA,
+    ComponentB,
   },
 };
 </script>
