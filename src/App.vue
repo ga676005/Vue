@@ -1,19 +1,22 @@
 <template>
-  <div id="app">
-    <ComponentA />
-    <ComponentB />
+  <div
+    id="app"
+    class="bg-gray-300 flex flex-col justify-center items-center h-screen"
+  >
+    <InputField default="My default text" />
+    <IsDirty />
   </div>
 </template>
 
 <script>
-import ComponentA from "./components/ComponentA.vue";
-import ComponentB from "./components/ComponentB.vue";
+import InputField from "./components/InputField.vue";
+import IsDirty from "./components/IsDirty";
 
 export default {
   name: "App",
   components: {
-    ComponentA,
-    ComponentB,
+    InputField,
+    IsDirty,
   },
 };
 </script>
@@ -26,22 +29,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-body {
-  background: #fff;
-  color: #777;
-}
-
-.hero-box {
-  background: #f3f3ff;
-  display: flex;
-}
-.hero-box-left {
-  width: 400px;
-  margin: 25px;
-}
-.hero-box-right {
-  width: 100%;
-  margin: 25px;
 }
 </style>
