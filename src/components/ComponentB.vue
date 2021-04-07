@@ -2,7 +2,7 @@
   <div>
     {{ message }}
 
-    <ComponentC />
+    <ComponentC message="Message sent from ComponentB" />
   </div>
 </template>
 
@@ -14,9 +14,9 @@ export default {
     ComponentC,
   },
   created() {
-    this.$bus.$on("say-hello", () => {
+    this.$bus.$on("say-hello", (message) => {
       //$on使用EventBus的監聽事件
-      this.message = "Hello from Component A";
+      this.message = message;
     });
   },
   data: function () {

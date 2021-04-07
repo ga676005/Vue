@@ -1,17 +1,24 @@
 <template>
-  <div>C: {{ message }}</div>
+  <!-- 顯示data.msg的值 -->
+  <div>C: {{ msg }}</div>
 </template>
 
 <script>
 export default {
+  props: {
+    message: String,
+  },
+
   data: function () {
+    //$on使用EventBus的監聽事件
     this.$bus.$on("say-hello", () => {
-      //$on使用EventBus的監聽事件
-      this.message = "Hello from Component A";
+      //事件觸發後，用props修改data
+      this.msg = this.message + " then modified in ComponentC";
     });
 
     return {
-      message: "Lonely Component Here!",
+      //data跟props不能同名
+      msg: this.message,
     };
   },
 };

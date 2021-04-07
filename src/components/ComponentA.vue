@@ -11,8 +11,10 @@
 export default {
   methods: {
     sayHello: function () {
-      this.$bus.$emit("say-hello");
+      const messageToSend = "Hello from ComponentA !!!";
+
       //$emit註冊事件到EventBus
+      this.$bus.$emit("say-hello", messageToSend);
     },
   },
 };
