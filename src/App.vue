@@ -1,48 +1,19 @@
 <template>
   <div id="app">
-    <h1>The Cup Store</h1>
-    <ProductComponent
-      v-for="product in products"
-      :product="product"
-      :key="product.id"
-    />
-    <Cart />
+    <Todo />
   </div>
 </template>
 
 <script>
-import ProductComponent from "./components/ProductComponent.vue";
-import Cart from "./components/Cart.vue";
+import Todo from "./components/Todo.vue";
 
 export default {
   name: "App",
   components: {
-    ProductComponent,
-    Cart,
+    Todo,
   },
   data: function () {
-    return {
-      products: [
-        {
-          id: 120,
-          name: "Colorful Cups",
-          price: 999,
-          image: "cups1",
-        },
-        {
-          id: 121,
-          name: "Coffee & Home",
-          price: 1499,
-          image: "cups2",
-        },
-        {
-          id: 122,
-          name: "Old Red Friend",
-          price: 1999,
-          image: "cups3",
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
